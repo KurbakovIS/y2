@@ -14,9 +14,11 @@ use yii\helpers\Url;
             <div class="col-sm-3">
                 <div class="left-sidebar">
                     <h2>Category</h2>
-                    <?php
-                    echo MenuWidget::widget(['tpl' => 'menu'])
-                    ?>
+                    <ul class="catalog category-products">
+                        <?php
+                        echo MenuWidget::widget(['tpl' => 'menu'])
+                        ?>
+                    </ul>
                     <div class="brands_products"><!--brands_products-->
                         <h2>Brands</h2>
                         <div class="brands-name">
