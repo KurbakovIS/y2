@@ -37,6 +37,7 @@ class CategoryController extends AppController
     public function actionSearch()
     {
         $q = trim(Yii::$app->request->get('q'));
+        $this->setMeta('E-SHOPPER | Поиск: ' . $q);
         if (!$q) {
             return $this->render('search');
         }
