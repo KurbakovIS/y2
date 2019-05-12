@@ -69,7 +69,6 @@ class LoginForm extends Model
     public function login()
     {
         if ($this->validate()) {
-            
             if ($this->rememberMe) {
                 $u = $this->getUser();
                 $u->generateAuthKey();
